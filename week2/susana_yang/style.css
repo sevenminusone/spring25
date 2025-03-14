@@ -1,0 +1,31 @@
+img {
+    width: 200px;
+    border-radius: 10px; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease-in-out;
+}
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: rgb(232, 222, 207);
+    color: rgb(129, 109, 76);
+    padding-top: 200px;
+    line-height: 1.6; 
+  }
+
+  @keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    background-image: linear-gradient(90deg, rgb(113, 3, 3), rgb(183, 124, 14), rgb(201, 201, 14), rgb(3, 67, 3), rgb(7, 108, 108), rgb(58, 58, 127), rgb(111, 13, 111));
+    background-size: 400% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow 3s infinite linear;
+}
